@@ -592,6 +592,87 @@ body {
     display: inline-block;
 }
 /* ========================================services=end=============================================== */
+/* ========================================provide=================================================== */
+#provide{
+    
+}
+#provide .container-fluid{
+    padding: 0px;
+    /* margin: 0px; */
+}
+#provide .provide-content .provide-right{
+    padding:100px 0px 70px 70px;
+    padding-right:6%;
+}
+#provide .provide-content .provide-right h2{
+    font-size: 45px;
+    font-family:LEMONMILK-Regular;
+    color: #8c412b;
+    line-height: 45px;
+}
+#provide .provide-content .provide-right h2 span{
+    color: #434749;
+}
+#provide .provide-content .provide-right p{
+    font-size:16px;
+    font-family:Poppins-Medium;
+    color: #434749;
+    margin: 22px 0px;
+}
+#provide .provide-content .provide-right h3{
+    font-size:19px;
+    font-family:LEMONMILK-Regular;
+    color: #434749;
+    padding: 14px 14px 14px 0px;
+    border-bottom: solid 1px #434749;
+}
+#provide .provide-content .provide-right .front{
+    font-size:22px;
+    color: #8c412b;
+    padding-right:16px;
+}
+#provide .provide-content .provide-right .provide-details{
+    display: flex;
+    flex-direction: column;
+}
+#provide .owl-provide{
+    margin: 15px 0px;
+}
+#provide .owl-nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin:50px 0px 0px 0px;
+}
+#provide .owl-prev{
+    background-color:#8c412b;
+    width:45px;
+    height:45px;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#provide .provide-content .provide-rightt{
+    color:white;
+    font-size: 25px;
+    display: inline-block;
+}
+#provide .owl-next{
+    background-color:#8c412b;
+    width:45px;
+    height:45px;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#provide .provide-content .provide-right svg{
+    color:white;
+    font-size: 25px;
+    display: inline-block;
+}
+/* ========================================provide=end=============================================== */
 @media (max-width: 5120px) {
     .container-new-big {
         max-width: 100%;
