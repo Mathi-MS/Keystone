@@ -598,10 +598,13 @@ body {
 }
 #provide .container-fluid{
     padding: 0px;
-    /* margin: 0px; */
+}
+#provide .provide-content .provide-left img{
+    height: 100%;
+    z-index: 999999999;
 }
 #provide .provide-content .provide-right{
-    padding:100px 0px 70px 70px;
+    padding:70px 0px 70px 70px;
     padding-right:6%;
 }
 #provide .provide-content .provide-right h2{
@@ -673,6 +676,295 @@ body {
     display: inline-block;
 }
 /* ========================================provide=end=============================================== */
+/* ========================================lock=================================================== */
+#lock{
+    padding: 120px 0px;
+}
+#lock .lock-content{
+    margin: 0px auto;
+    width: 88%;
+}
+#lock .lock-content h2{
+    font-size:35px;
+    font-family:LEMONMILK-Medium;
+    text-align: center;
+    color: #434749;
+    line-height: 35px;
+}
+#lock .lock-content p{
+    font-size:16px;
+    font-family:Poppins-Regular;
+    text-align: center;
+    color: #434749;
+    margin: 51px 0px;
+}
+#lock .lock-content .provide-boxes{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#lock .lock-content .provide-boxes .provide-box{
+    padding: 30px 20px 20px 30px;
+    border: dotted black 2px;
+    width: 30%;
+    position: relative;
+}
+#lock .lock-content h3{
+    font-size:20px;
+    font-family:LEMONMILK-Medium;
+    color:#8c412b;
+    margin: 20px 0px 10px 0px;
+}
+#lock .lock-content h4{
+    font-size:15px;
+    font-family:Poppins-Regular;
+    color:#434749;
+    line-height:25px;
+}
+#lock .lock-content .number{
+    background-color: #8c412b;
+    height: 50px;
+    width: 50px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:-20px;
+    right:22px;
+}
+#lock .lock-content h5{
+    font-size:30px;
+    font-family:Poppins-Medium;
+    color: white;
+}
+#lock .lock-content h4 span{
+    color:#8c412b;
+}
+/* ========================================lock=end=============================================== */
+/* ========================================appoint=================================================== */
+#appoint{
+    background: url(../images/appointment-back.png);
+    padding: 120px 0px;
+}
+#appoint .appoint-content{
+    width: 88%;
+    margin: 0px auto;
+}
+#appoint .appoint-content h3{
+    margin:58px 0px 33px 0px;
+    font-size: 35px;
+    line-height: 35px;
+    font-family:LEMONMILK-Medium;
+    color: white;
+}
+#appoint .appoint-content h4{
+    font-size:16px;
+    font-family:Poppins-Medium;
+    color: white;
+    line-height:25px;
+}
+#appoint .appoint-btn{
+    display: inline-block;
+    height: 50px;
+    width:230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top:35px;
+    background-color: white;
+    border-radius: 200px;
+}
+#appoint .appoint-btn:hover>span{
+    color: white !important;
+}
+#appoint .appoint-btn span{
+    color:#8c412b;
+    font-size: 15px;
+    font-family:LEMONMILK-Medium;
+    text-decoration: none;
+}
+/* ========================================appoint=end=============================================== */
+/* ========================================testi=================================================== */
+#testi{
+    background-color: #8c412b;
+    padding: 120px 0px;
+    position: relative;
+}
+#testi .testi-content{
+    width: 88%;
+    margin: 0px auto;
+}
+#testi .testi-content h2{
+    font-size: 20px;
+    font-family:LEMONMILK-Regular;
+    color: white;
+}
+#testi .testi-content h3{
+    font-size:35px;
+    font-family:LEMONMILK-Medium;
+    color: white;
+    line-height: 35px;
+    margin: 30px 0px;
+}
+#testi .testi-content h4{
+    font-size:70px;
+    color: #8c412b;
+}
+#testi .testi-right{
+    background-color: white;
+    padding:32px 44px;
+    position: relative;
+}
+#testi .testi-content h4{
+    font-size:70px;
+    color: #8c412b;
+    line-height:0px;
+    margin-top: 32px ;
+}
+#testi .testi-content h5{
+    font-size:15px;
+    font-family:Poppins-Regular;
+    color:#434749;
+    margin:25px 0px;
+}
+#testi .testi-content h6{
+    font-size:18px;
+    font-family:Poppins-Medium;
+    color:#00374c;
+    margin: 0px 20px;
+}
+#testi .testi-content h6 span{
+    color:#666666;
+}
+#testi .testi-right-left{
+    display: flex;
+    align-items: center;
+}
+#testi .owl-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+#testi .owl-prev{
+    background-color: #8c412b;
+    width:45px;
+    height:45px;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#testi .fa-caret-left{
+    color:white;
+    font-size: 25px;
+    display: inline-block;
+}
+#testi .owl-next{
+    background-color: #8c412b;
+    width:45px;
+    height:45px;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#testi .fa-caret-right{
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+}
+#testi .testi-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* ========================================testi=end=============================================== */
+/* ========================================contact=================================================== */
+#contact{
+    background: url(../images/contact-back.png);
+    background-color:#ffffff;
+    padding: 120px 0px;
+}
+#contact .contact-content{
+    margin:0px auto;
+    width:88%;
+}
+#contact .contact-content h2{
+    font-size: 35px;
+    font-family:LEMONMILK-Medium;
+    color:#434749;
+    text-align: center;
+}
+#contact .contact-content .contact-inputs{
+    display: flex;
+}
+#contact .contact-content .contact-inputs .left-input{
+    width: 100%;
+    padding:0px 30px;
+}
+#contact .contact-content .contact-inputs .right-input{
+    width: 100%;
+    padding:0px 30px;
+}
+#contact .contact-content input{
+    padding:20px 0px;
+    border: none;
+    border-bottom: solid 1px #979797;
+    border-radius: 0px;
+    background-color: transparent;
+    margin-top:30px;
+}
+#contact .contact-content input:focus{
+    box-shadow: none;
+}
+#contact .contact-content input::placeholder{
+    font-size: 15px;
+    font-family:Poppins-Medium;
+}
+#contact .contact-content textarea{
+    padding:20px 0px;
+    border: none;
+    border-bottom: solid 1px #979797;
+    border-radius: 0px;
+    background-color: transparent;
+    margin-top:30px;
+}
+#contact .contact-content textarea:focus{
+    box-shadow: none;
+}
+#contact .contact-content textarea::placeholder{
+    font-size: 15px;
+    font-family:Poppins-Medium;
+}
+#contact .contact-btn{
+    display: inline-block;
+    height: 40px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* margin: 33px 0px; */
+    background-color: #8c412b;
+}
+#contact .contact-btn span{
+    color:white;
+    font-size: 15px;
+    font-family:Poppins-Medium;
+    text-decoration: none;
+}
+#contact .contact-submit-btn{
+    display: flex;
+    align-items: center;
+    height: 63%;
+}
+/* ========================================contact=end=============================================== */
 @media (max-width: 5120px) {
     .container-new-big {
         max-width: 100%;
