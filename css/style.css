@@ -147,7 +147,7 @@ body {
     text-decoration: none;
 }
 #navbar .navbar-btn:hover>span{
-    color: #8c412b;
+    color:white;
 }
 #navbar .navbar-btn:focus>span{
     color: #8c412b;
@@ -201,6 +201,7 @@ body {
     max-width:1680px ;
     margin: auto;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 /* ========================================Navbar=end=============================================== */
 /* ========================================carousel=================================================== */
@@ -229,6 +230,10 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    position: absolute;
+    bottom:145px;
+    left:60%;
+    z-index: 222;
 }
 #carousel .carousel-btn span{
     color: white;
@@ -239,13 +244,28 @@ body {
 #carousel .carousel-caption {
     position: absolute;
     right:85px;
-    bottom: 145px;
+    bottom:219px;
     left:60%;
     padding-top:0px;
     padding-bottom:0px;
     color: #fff;
     text-align: start;
     z-index: 2;
+    animation:10s linear carouselanimation infinite;
+}
+@keyframes carouselanimation{
+    0%{
+        opacity: 1;
+        left: 60%;
+        }
+      50%{
+        opacity:0;
+        left:62%;
+        }
+     100%{
+         opacity: 1;
+         left: 60%;
+        }
 }
 #carousel .carousel-indicators {
     position: absolute;
@@ -485,7 +505,6 @@ body {
     text-decoration: none;
     margin-top: 22px;
     background-color: #8c412b;
-    border: solid 2px #8c412b;
 }
 #prof .prof-btn:hover>span{
     color: #8c412b !important;
@@ -965,6 +984,120 @@ body {
     height: 63%;
 }
 /* ========================================contact=end=============================================== */
+/* ========================================Footer=================================================== */
+#footer{
+    padding: 120px 0px 60px 0px;
+}
+#footer .footer-content{
+    margin:0px auto;
+    width:88%;
+    text-align: center;
+}
+#footer .footer-content .footer-logo{
+    display:flex;
+    justify-content: center;
+    margin-bottom:42px ;
+}
+#footer .footer-content  .footer-list-one li{
+    display: inline;
+    font-size: 15px;
+    font-family:LEMONMILK-Medium;
+    margin: 0px 19px;
+}
+#footer .footer-content  .footer-list-two li{
+    display: inline;
+    font-size: 13px;
+    font-family:LEMONMILK-Regular;
+    padding: 0px 19px 32px 19px;
+}
+#footer .footer-content h2{
+    padding:18px 0px;
+    font-size: 15px;
+    font-family:Poppins-Medium;
+}
+#footer ul{
+    padding: 0px;
+}
+#footer .footer-content h5{
+    font-size: 17px;
+    font-family:Poppins-semibold;
+}
+#footer .footer-content .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin: 45px 0px 40px 0px;
+}
+#footer .footer-content .footer-icons a{
+    display: inline-block;
+    height:40px;
+    width:40px;
+    background-color: #8c412b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:200px;
+}
+#footer .footer-content .footer-icons svg{
+    color:white;
+    font-size: 22px;
+}
+#footer .footer-content h4{
+    font-size: 14px;
+    font-family:Poppins-Medium;
+    line-height:30px;
+}
+/* ========================================Footer=end=============================================== */
+/* ========================================Top=================================================== */
+#back_click_top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#back_click_top {
+    display: inline-block;
+    background-color: #8c412b;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    /* border-radius: 4px; */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    /* opacity: 0;
+    visibility: hidden; */
+    z-index: 100000;
+    font-size: 35px;
+    cursor: pointer;
+    color: #fff !important;
+    border-radius: 50% !important;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#back_click_top svg{
+    font-style: normal;
+    font-size: 22px;
+    line-height: 50px;
+    color: white !important;
+}
+#back_click_top img{
+    width:15px;
+    animation:20s infinite key linear;
+}
+@keyframes key{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+/* ========================================Top=end=============================================== */
 @media (max-width: 5120px) {
     .container-new-big {
         max-width: 100%;
