@@ -290,18 +290,20 @@
     <!-- =====================tab=end============================================================= -->
     <!-- =====================prof================================================================= -->
     <section id="prof">
-        <div class="prof-content">
-            <div class="prof-right">
-                <h2>Professional <br>
-                    locksmith services <br>
-                    ready to collaborate.</h2>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.</h3>
-                <h4>Trusted Locksmith <br>
-                    Ready 24 Hours</h4>
-                <h5>Lorem ipsum dolor  sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-                <a href="#" class="prof-btn hvr-bounce-to-bottom">
-                    <span>more</span>
-                </a>
+        <div class="back">
+            <div class="prof-content">
+                <div class="prof-right">
+                    <h2>Professional <br>
+                        locksmith services <br>
+                        ready to collaborate.</h2>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.</h3>
+                    <h4>Trusted Locksmith <br>
+                        Ready 24 Hours</h4>
+                    <h5>Lorem ipsum dolor  sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                    <a href="#" class="prof-btn hvr-bounce-to-bottom">
+                        <span>more</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -393,10 +395,11 @@
     <section id="provide" >
        <div class="container-fluid">
         <div class="row gx-0 provide-content">
-            <div class=" col-5 provide-left">
-                <img src="images/provide-back.png" alt="">
+            <div class=" col-md-4 col-sm-0 col-5 provide-left">
+                <img class="provide-img-desk" src="images/provide-back.png" alt="">
+                <img class="provide-img-res" src="images/keyanime.png" alt="">
             </div>
-            <div class="col-7 provide-right">
+            <div class="col-md-8 col-sm-12 col-7 provide-right">
                 <h2>Life Needs Locks, <br>
                     <span>We Provide Them</span>
                 </h2>
@@ -524,12 +527,12 @@
     <section id="testi">
         <div class="testi-content">
             <div class="row">
-                <div class="col-4 testi-left">
+                <div class="col-sm-12 col-md-4 col-4 testi-left">
                     <h2>Testimonials</h2>
                     <h3>What our <br>
                         client say's</h3>
                 </div>
-                <div class="col-8 testi-right">
+                <div class="col-sm-12 col-md-8 col-8 testi-right">
                     <h4>&#10077;</h4>
                     <div class="owl-carousel owl-theme owl-testi">
                         <div class="item">
@@ -675,7 +678,7 @@
     <script>
         $('.owl-services').owlCarousel({
             loop:true,
-            margin:130,
+            margin:80,
             nav:true,
             responsiveClass:true,
             dots:false,
@@ -686,11 +689,17 @@
                 items:1
             },
             600:{
-                items:3
+                items:2,
+                margin:50
             },
             1000:{
-                items:3
-            }
+                items:2,
+                margin:60
+            },
+            1025:{
+                items:3,
+                margin:80
+            },
             }
         })
     </script>
@@ -708,8 +717,10 @@
             nav:true
         },
         600:{
+            items:1,
+        },
+        900:{
             items:2,
-            nav:false
         },
         1000:{
             items:2,
