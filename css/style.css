@@ -74,6 +74,45 @@ body {
     max-width: 1680px;
     position: relative;
 }
+#navbar-top{
+    display: none;
+    position: fixed;
+    top: 0px;
+    z-index: 99999999;
+    width: 100%;
+}
+#navbar-top .container-fluid{
+    width: 88%;
+    margin: 0px auto;
+}
+#navbar-top .navbar-brand img{
+    width: 50px;
+}
+#navbar-top .navbar-toggler-icon{
+    background: none;
+}
+#navbar-top .navbar-toggler-icon svg {
+    font-size: 25px;
+    color: #8c412b;
+}
+#navbar-top .navbar-toggler{
+    border: none;
+}
+#navbar-top .navbar-toggler:focus{
+    box-shadow: none;
+}
+#navbar-top .nav-item .nav-link{
+    font-size: 15px;
+    font-family:LEMONMILK-Medium;
+    color:#434749;
+    padding:10px 0px;
+}
+#navbar-top .dropdown-menu li a{
+    color:#434749;
+    font-family:LEMONMILK-Regular;
+    font-size: 12px;
+    padding: 10px;
+}
 /* ========================================Navbar=================================================== */
 #navbar{
     position: fixed;
@@ -1509,6 +1548,12 @@ body {
     }
 }
 @media(max-width:992px) {
+    #navbar-top{
+        display: block;
+    }
+    #carousel{
+        margin-top:10%;
+    }
     #tab .tab-contentt .tab-boxes .tab-box .tab-box-inner {
         display: flex;
         align-items: center;
@@ -1836,6 +1881,9 @@ body {
 }
 
 @media(max-width:431px) {
+    #carousel{
+        margin-top:18%;
+    }
     #tab .tab-contentt .tab-boxes .tab-box {
         padding:18px;
     }
@@ -2049,6 +2097,9 @@ body {
         color: #434749;
         text-align: center;
     }
+    #carousel{
+        margin-top:21%;
+    }
 }
 
 @media(max-width:320px) {
@@ -2064,5 +2115,8 @@ body {
         font-family: LEMONMILK-Medium;
         color: #8c412b;
         margin: 20px 0px 10px 0px;
+    }
+    #carousel{
+        margin-top:24%;
     }
 }
