@@ -63,7 +63,19 @@ h1,h2,h3,h4,h5,p{
     src: url('../fonts/LEMONMILK-Regular.otf');
 }
 
+  /* ====== */
+ #service .img-hover-zoom img {
+    transition: transform .2s, filter 1.5s ease-in-out;
+    filter: grayscale(100%);
+  }
+  
+  /* The Transformation */
+  #service   .img-hover-zoom:hover img {
+    filter: grayscale(0);
+    transform: scale(0.9);
 
+  }
+  
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
@@ -336,6 +348,65 @@ body {
 }
 /* ========================================carousel=end=============================================== */
 /* ========================================both=================================================== */
+#tab .tab-animation {
+    position: absolute;
+    top:15%;
+    left:10%;
+    z-index:22;
+    animation: tabanimation 50s linear infinite;
+}
+#tab .tab-animation img{
+
+    /* animation: tabanimation 10s linear infinite; */
+}
+@keyframes tabanimation {
+    0%{
+        top:20%;
+        left: 7%;
+        transform: rotate(0deg);
+    }
+    10%{
+        top:23%;
+        left: 40%;
+    }
+    20%{
+        top:25%;
+        left: 87%;
+    }
+    30%{
+        top: 35%;
+        left:40%;
+    }
+    40%{
+        top: 45%;
+        left:7%;
+    }
+    50%{
+        top: 55%;
+        left:40%;
+    }
+    60%{
+        top: 45%;
+        left:57%;
+    }
+    70%{
+        top: 80%;
+        left:87%;
+    }
+    80%{
+        top: 45%;
+        left: 87%;
+    }
+    90%{
+        top: 35%;
+        left:40%;
+    }
+    100%{
+        top:20%;
+        left: 7%;
+        transform: rotate(360deg);
+    }
+}
 #tab{
     position: relative;
 }
