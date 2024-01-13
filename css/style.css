@@ -86,6 +86,9 @@ body {
     max-width: 1680px;
     position: relative;
 }
+#testi{
+    display: none;
+}
 #navbar-top{
     display: none;
     position: fixed;
@@ -256,10 +259,7 @@ body {
 }
 /* ========================================Navbar=end=============================================== */
 /* ========================================carousel=================================================== */
-#carousel{
-    
-}
-#carousel .carousel-control-prev {
+#carousel .carousel-control-prev{
     display: none;
 }
 #carousel .carousel-control-next {
@@ -355,11 +355,7 @@ body {
     z-index:22;
     animation: tabanimation 50s linear infinite;
 }
-#tab .tab-animation img{
-
-    /* animation: tabanimation 10s linear infinite; */
-}
-@keyframes tabanimation {
+@keyframes tabanimation{
     0%{
         top:20%;
         left: 7%;
@@ -501,9 +497,9 @@ body {
     align-items: center;
     text-decoration: none;
 }
-#tab .tab-btn:hover>span{
+/* #tab .tab-btn:hover>span{
     color:#fff;
-}
+} */
 #tab .tab-btn span{
     color:#8c412b;
     font-size: 15px;
@@ -618,9 +614,9 @@ body {
     margin-top: 22px;
     background-color: #8c412b;
 }
-#prof .prof-btn:hover>span{
+/* #prof .prof-btn:hover>span{
     color: #8c412b !important;
-}
+} */
 #prof .prof-btn span{
     color: white;
     font-size: 15px;
@@ -676,9 +672,9 @@ body {
     text-decoration: none;
     margin: 33px 0px;
 }
-#service .service-btn:hover>span{
+/* #service .service-btn:hover>span{
     color:#fff;
-}
+} */
 #service .service-btn span{
     color:#8c412b;
     font-size: 15px;
@@ -910,9 +906,9 @@ body {
     background-color: white;
     border-radius: 200px;
 }
-#appoint .appoint-btn:hover>span{
+/* #appoint .appoint-btn:hover>span{
     color: white !important;
-}
+} */
 #appoint .appoint-btn span{
     color:#8c412b;
     font-size: 15px;
@@ -1019,6 +1015,118 @@ body {
     justify-content: center;
 }
 /* ========================================testi=end=============================================== */
+#testitwo{
+    background-color: #8c412b;
+    background: url(../images/testi-two-back.png);
+    padding: 120px 0px;
+    position: relative;
+    background-repeat:no-repeat;
+}
+#testitwo .testitwo-content{
+    width: 88%;
+    margin: 0px auto;
+}
+#testitwo .testitwo-content .col-8 {
+    position: relative;
+}
+#testitwo .testitwo-owl{
+position: absolute;
+    top: 20%;
+    left: 5%;
+}
+#testitwo .testitwo-content .col-8 .testitwo-flex {
+    display: flex;
+    
+    gap: 50px;
+}
+#testitwo .testitwo-content .col-8 .testitwo-top {
+    position: absolute;
+    top: 6%;
+    left: 10%;
+}
+#testitwo .testitwo-content .col-8 .testitwo-top h4{
+    font-size:140px;
+    color: #8c412b;
+    line-height:0px;
+    margin-top: 32px ;
+}
+#testitwo .testitwo-content .col-8 .testitwo-bottom {
+    position: absolute;
+    bottom: 4%;
+    right: 25%;
+}
+#testitwo .testitwo-content .col-8 .testitwo-bottom h4{
+    font-size:140px;
+    color: #8c412b;
+    line-height:0px;
+    margin-top: 32px ;
+}
+#testitwo .testitwo-content .col-8 h3{
+    font-size: 40px;
+    font-family:LEMONMILK-Regular;
+    color:#434749;
+}
+#testitwo .testitwo-content .col-8 p{
+    font-size:16px;
+    font-family:Poppins-Regular;
+    text-align: start;
+    color: #434749;
+    margin:22px 200px 22px 0px;
+}
+#testitwo .testitwo-content .testitwo-right-content-profile{
+    width: 400px;
+}
+#testitwo .testitwo-content .col-4 h2{
+    font-size: 50px;
+    font-family:LEMONMILK-Regular;
+    color: white;
+}
+#testitwo .testitwo-content .col-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#testitwo .owl-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    position: absolute;
+    right: 27%;
+}
+#testitwo .owl-prev{
+    background-color: #8c412b;
+    width:45px;
+    height:45px;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#testitwo .fa-caret-left{
+    color:white;
+    font-size: 25px;
+    display: inline-block;
+}
+#testitwo .owl-next{
+    background-color: #8c412b;
+    width:45px;
+    height:45px;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#testitwo .fa-caret-right{
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+}
+#testitwo .testitwo-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 /* ========================================contact=================================================== */
 #contact{
     background: url(../images/contact-back.png);
@@ -1301,6 +1409,21 @@ body {
 }
 
 @media(max-width:1180px) {
+    #testitwo .owl-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        position: absolute;
+        right: 27%;
+        bottom: -13%;
+    }
+    #testitwo .testi-back-shape{
+        width: 700px;
+    }
+    #testitwo .testi-back-shape img{
+        width: 100%;
+    }
     #carousel .carousel-caption {
         position: absolute;
         right: 85px;
@@ -1440,8 +1563,45 @@ body {
     }
    
 }
-
+@media(max-width:1115px) {
+    #testitwo .testi-back-shape {
+        width: 630px;
+    }
+    #testitwo .owl-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        position: absolute;
+        right: 27%;
+        bottom: -36%;
+    }
+    #testitwo .testitwo-content .col-4 h2 {
+        font-size: 41px;
+        font-family: LEMONMILK-Regular;
+        color: white;
+    }
+}
 @media(max-width:1024px) {
+    #testitwo .testi-back-shape {
+        width: 540px;
+    }
+    #testitwo .testitwo-content .col-8 p {
+        font-size: 16px;
+        font-family: Poppins-Regular;
+        text-align: start;
+        color: #434749;
+        margin: 22px 135px 22px 0px;
+    }
+    #testitwo .owl-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        position: absolute;
+        right: 27%;
+        bottom: -45%;
+    }
     #carousel .carousel-inner .carousel-item p {
         font-family: LEMONMILK-Bold;
         font-size: 35px;
@@ -1619,6 +1779,12 @@ body {
     }
 }
 @media(max-width:992px) {
+    #testitwo{
+        display: none;
+    }
+    #testi{
+        display: block;
+    }
     #navbar-top{
         display: block;
     }
@@ -1763,6 +1929,53 @@ body {
     #appoint .appoint-content h4 br{
         display: none;
     }
+    @keyframes tabanimation {
+        0%{
+            top:20%;
+            left: 7%;
+            transform: rotate(0deg);
+        }
+        10%{
+            top:23%;
+            left: 40%;
+        }
+        20%{
+            top:25%;
+            left: 67%;
+        }
+        30%{
+            top: 35%;
+            left:40%;
+        }
+        40%{
+            top: 45%;
+            left:7%;
+        }
+        50%{
+            top: 55%;
+            left:40%;
+        }
+        60%{
+            top: 45%;
+            left:57%;
+        }
+        70%{
+            top: 80%;
+            left:67%;
+        }
+        80%{
+            top: 45%;
+            left: 67%;
+        }
+        90%{
+            top: 35%;
+            left:40%;
+        }
+        100%{
+            top:20%;
+            left: 7%;
+            transform: rotate(360deg);
+        }
 }
 
 @media(max-width:600px) {
